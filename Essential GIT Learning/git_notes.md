@@ -74,8 +74,10 @@ In Git version 2.23 and later, git checkout was split into two more specific com
 ---
 ## Large file problem:
 In order to push large file greater than 100mb we have to install and use `git lfs`.
-- `git lfs install`
+- `git lfs install` : install on every git repo
 - `git lfs track <large-file-name>` : Start Tracking the large File.
-- `git lfs push --all origin main` : Push the large file to Cloud repo.
-\
-Than we can push the other file.
+- `git lfs track` : git lfs track without any arguments will list all currently tracked patterns
+- `git lfs status`
+- `git lfs status --json`
+- `git lfs ls-files` : Show the files tracked by lfs
+- `git lfs ls-files -s`
